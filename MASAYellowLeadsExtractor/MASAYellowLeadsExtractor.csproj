@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F262B88B-8564-4EE3-BA5D-FC3DC2818BA1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MASAYellowLeadsExtractor</RootNamespace>
+    <AssemblyName>MASA Yellow Leads Extractor</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>MASAYellowLeadsExtractor.ico</ApplicationIcon>
+    <StartupObject>MASAYellowLeadsExtractor.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\ori\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.Base">
+      <HintPath>..\ori\EO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.WebBrowser">
+      <HintPath>..\ori\EO.WebBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.WebBrowser.WinForm">
+      <HintPath>..\ori\EO.WebBrowser.WinForm.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.WebEngine">
+      <HintPath>..\ori\EO.WebEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\ori\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExcelDocument.cs" />
+    <Compile Include="HTTPScraper.cs" />
+    <Compile Include="Microsoft\Office\Interop\Excel\AppEvents.cs" />
+    <Compile Include="Microsoft\Office\Interop\Excel\AppEvents_Event.cs" />
+    <Compile Include="Microsoft\Office\Interop\Excel\Application.cs" />
+    <Compile Include="Microsoft\Office\Interop\Excel\DocEvents.cs" />
+    <Compile Include="Microsoft\Office\Interop\Excel\DocEvents_Event.cs" />
+    <Compile Include="Microsoft\Office\Interop\Excel\Range.cs" />
+    <Compile Include="Microsoft\Office\Interop\Excel\Sheets.cs" />
+    <Compile Include="Microsoft\Office\Interop\Excel\Workbook.cs" />
+    <Compile Include="Microsoft\Office\Interop\Excel\WorkbookEvents.cs" />
+    <Compile Include="Microsoft\Office\Interop\Excel\WorkbookEvents_Event.cs" />
+    <Compile Include="Microsoft\Office\Interop\Excel\Workbooks.cs" />
+    <Compile Include="Microsoft\Office\Interop\Excel\Worksheet.cs" />
+    <Compile Include="Microsoft\Office\Interop\Excel\XlFileFormat.cs" />
+    <Compile Include="Microsoft\Office\Interop\Excel\XlSaveAsAccessMode.cs" />
+    <Compile Include="Microsoft\Office\Interop\Excel\_Application.cs" />
+    <Compile Include="Microsoft\Office\Interop\Excel\_Workbook.cs" />
+    <Compile Include="Microsoft\Office\Interop\Excel\_Worksheet.cs" />
+    <Compile Include="App\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\DataItem.cs" />
+    <Compile Include="App\DataScrapers\AziendeVirgilioDataScraper.cs" />
+    <Compile Include="App\DataScrapers\BrasilDataScraper.cs" />
+    <Compile Include="App\DataScrapers\BUCHDataScraper.cs" />
+    <Compile Include="App\DataScrapers\COZADataScraper.cs" />
+    <Compile Include="App\DataScrapers\CylexDataScraper.cs" />
+    <Compile Include="App\DataScrapers\DetelefoongidsDataScraper.cs" />
+    <Compile Include="App\DataScrapers\EGDataScraper.cs" />
+    <Compile Include="App\DataScrapers\GelbenseitenDataScraper.cs" />
+    <Compile Include="App\DataScrapers\GoldenPagesDataScraper.cs" />
+    <Compile Include="App\DataScrapers\HeroldDataScraper.cs" />
+    <Compile Include="App\DataScrapers\InfobelDataScraper.cs" />
+    <Compile Include="App\DataScrapers\JustDataScraper.cs" />
+    <Compile Include="App\DataScrapers\KompassDataScraper.cs" />
+    <Compile Include="App\DataScrapers\LATDataScraper.cs" />
+    <Compile Include="App\DataScrapers\LocalDataScraper.cs" />
+    <Compile Include="App\DataScrapers\MyDataScraper.cs" />
+    <Compile Include="App\DataScrapers\PagesjaunesDataScraper.cs" />
+    <Compile Include="App\DataScrapers\PaginasamarillasDataPhantomJSScraper.cs" />
+    <Compile Include="App\DataScrapers\PaginasamarillasDataScraper.cs" />
+    <Compile Include="App\DataScrapers\PaginegialleDataScraper.cs" />
+    <Compile Include="App\DataScrapers\PaginiauriiRODataScraper.cs" />
+    <Compile Include="App\DataScrapers\PaiDataScraper.cs" />
+    <Compile Include="App\DataScrapers\PakiDataScraper.cs" />
+    <Compile Include="App\DataScrapers\POLDataScraper.cs" />
+    <Compile Include="App\DataScrapers\UAEDataScraper.cs" />
+    <Compile Include="App\DataScrapers\XoDataScraper.cs" />
+    <Compile Include="App\DataScrapers\YellowPagesAlbaniaDataScraper.cs" />
+    <Compile Include="App\DataScrapers\YellowPagesCaDataScraper.cs" />
+    <Compile Include="App\DataScrapers\YellowPagesDataScraper.cs" />
+    <Compile Include="App\DataScrapers\YelpCZDataScraper.cs" />
+    <Compile Include="App\DataScrapers\YelpDataScraper.cs" />
+    <Compile Include="App\DataScrapers\YelpESDataScraper.cs" />
+    <Compile Include="App\DataScrapers\YelpFRDataScraper.cs" />
+    <Compile Include="App\DataScrapers\YelpITDataScraper.cs" />
+    <Compile Include="App\DataScrapers\YelpPTDataScraper.cs" />
+    <Compile Include="App\DataScrapers\YelpSEDataScraper.cs" />
+    <Compile Include="App\DataScrapers\YPRUDataScraper.cs" />
+    <Compile Include="App\DetailsPage.cs" />
+    <Compile Include="App\EmailMiner.cs" />
+    <Compile Include="App\ExportManager.cs" />
+    <Compile Include="App\Languages.cs" />
+    <Compile Include="App\LinksScrapers\AUSLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\AustraliaLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\AziendeVirgilioLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\BUCHLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\COZALinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\CylexLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\CZLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\DetelefoongidsLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\EGLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\GelbenseitenLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\GoldenLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\GoldenPagesLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\HeroldLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\InfobelLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\JustLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\KompassLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\LATLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\LocalLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\PagesjaunesLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\PaginasamarillasLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\PaginegialleLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\PaginiauriiROLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\PaiLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\PakiLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\TrovanumeriLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\UAELinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\XoLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\YellLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\YellowPagesAlbaniaLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\YellowPagesCaLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\YellowPagesLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\YellowPagesPlLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\YelpCZLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\YelpESLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\YelpFRLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\YelpITLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\YelpLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\YelpPTLinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\YelpSELinksScraper.cs" />
+    <Compile Include="App\LinksScrapers\YPRULinksScraper.cs" />
+    <Compile Include="App\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\PhoneMiner.cs" />
+    <Compile Include="App\Program.cs" />
+    <Compile Include="App\Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="App\ProxiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\ProxiesForm.Designer.cs">
+      <DependentUpon>ProxiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Settings.cs" />
+    <Compile Include="App\SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProxyServer.cs" />
+    <Compile Include="WebScraper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\ProxiesForm.resx">
+      <DependentUpon>ProxiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="App\Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

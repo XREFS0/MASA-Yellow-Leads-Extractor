@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MASA Yellow Leads Extractor</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Segoe UI,Arial,sans-serif;background:#0d1b2a;color:#e0e0e0;min-height:100vh}
+.header{text-align:center;padding:30px 20px 20px;background:linear-gradient(180deg,#0d1b2a,#1b2838)}
+.logo{width:100px;height:100px;border-radius:50%;margin-bottom:12px;border:3px solid #c8a000}
+h1{font-size:32px;color:#ffd700;margin-bottom:6px}
+.sub{color:#aaa;font-size:14px;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:20px;max-width:1200px;margin:0 auto}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:500px){.grid{grid-template-columns:1fr}}
+.card{background:#1b2838;border:1px solid #2a3a4a;border-radius:10px;overflow:hidden}
+.card-head{background:linear-gradient(90deg,rgba(255,215,0,0.15),rgba(255,215,0,0.05));padding:10px 14px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #2a3a4a}
+.flag{width:24px;height:16px;border-radius:2px;background:#ccc;display:inline-block;text-align:center;line-height:16px;font-size:10px;font-weight:bold;color:#333}
+.country{font-weight:700;color:#ffd700;font-size:14px}
+.links{padding:10px 14px}
+.link{display:flex;justify-content:space-between;align-items:center;padding:8px 10px;margin:4px 0;background:rgba(255,255,255,0.05);border:1px solid #2a3a4a;border-radius:6px;text-decoration:none;color:#e0e0e0;font-size:13px;transition:background 0.2s}
+.link:hover{background:rgba(255,215,0,0.1);border-color:#c8a000}
+.tag{font-size:10px;color:#aaa;border:1px solid #3a4a5a;padding:2px 6px;border-radius:10px}
+.footer{text-align:center;padding:20px;color:#666;font-size:12px;border-top:1px solid #1a2a3a;margin-top:10px}
+</style>
+</head>
+<body>
+<div class="header">
+<img class="logo" src="logo.jpg" alt="Logo">
+<h1>MASA Yellow Leads Extractor</h1>
+<p class="sub">Professional Business Data Extraction Tool</p>
+<p class="sub">Extract contacts from 70+ Yellow Pages websites worldwide</p>
+</div>
+<div class="grid">
+<div class="card"><div class="card-head"><span class="flag">IT</span><span class="country">ITALIA</span></div><div class="links">
+<a class="link" href="https://www.paginegialle.it"><span>PagineGialle.it</span><span class="tag">dir</span></a>
+<a class="link" href="https://www.cylex-italia.it"><span>Cylex Italia</span><span class="tag">cylex</span></a>
+<a class="link" href="https://www.trovanumeri.com"><span>Trovanumeri</span><span class="tag">dir</span></a>
+<a class="link" href="https://aziende.virgilio.it"><span>Virgilio.it</span><span class="tag">dir</span></a>
+<a class="link" href="https://www.yelp.it"><span>Yelp.it</span><span class="tag">yelp</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">FR</span><span class="country">FRANCE</span></div><div class="links">
+<a class="link" href="https://www.cylex-locale.fr"><span>Pages Jaunes (Cylex)</span><span class="tag">cylex</span></a>
+<a class="link" href="https://www.yelp.fr"><span>Yelp.fr</span><span class="tag">yelp</span></a>
+<a class="link" href="https://pagesjaunes.fr"><span>PagesJaunes.fr</span><span class="tag">dir</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">DE</span><span class="country">GERMANY</span></div><div class="links">
+<a class="link" href="https://www.gelbeseiten.de"><span>GelbeSeiten.de</span><span class="tag">dir</span></a>
+<a class="link" href="https://web2.cylex.de"><span>Cylex.de</span><span class="tag">cylex</span></a>
+<a class="link" href="https://www.yelp.de"><span>Yelp.de</span><span class="tag">yelp</span></a>
+<a class="link" href="https://www.dastelefonbuch.de"><span>DasTelefonbuch</span><span class="tag">dir</span></a>
+<a class="link" href="https://www.11880.com"><span>11880.com</span><span class="tag">dir</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">US</span><span class="country">USA &amp; CANADA</span></div><div class="links">
+<a class="link" href="https://www.yellowpages.com"><span>YellowPages.com</span><span class="tag">dir</span></a>
+<a class="link" href="https://www.cylex.us.com"><span>Cylex US</span><span class="tag">cylex</span></a>
+<a class="link" href="https://www.yelp.com"><span>Yelp.com</span><span class="tag">yelp</span></a>
+<a class="link" href="https://www.yellowpages.ca"><span>YellowPages.ca</span><span class="tag">dir</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">UK</span><span class="country">UK</span></div><div class="links">
+<a class="link" href="https://www.yell.com"><span>Yell.com</span><span class="tag">dir</span></a>
+<a class="link" href="https://www.cylex-uk.co.uk"><span>Cylex.UK</span><span class="tag">cylex</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">ES</span><span class="country">SPAIN</span></div><div class="links">
+<a class="link" href="https://www.paginasamarillas.es"><span>PaginasAmarillas.es</span><span class="tag">dir</span></a>
+<a class="link" href="https://www.cylex.es"><span>Cylex Spain</span><span class="tag">cylex</span></a>
+<a class="link" href="https://www.yelp.es"><span>Yelp.es</span><span class="tag">yelp</span></a>
+<a class="link" href="http://www.guiatel.es"><span>Guiatel.es</span><span class="tag">dir</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">AT</span><span class="country">AUSTRIA</span></div><div class="links">
+<a class="link" href="https://www.herold.at"><span>Herold.at</span><span class="tag">dir</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">CH</span><span class="country">SWITZERLAND</span></div><div class="links">
+<a class="link" href="https://www.local.ch"><span>Local.ch</span><span class="tag">dir</span></a>
+<a class="link" href="https://www.cylex-swiss.ch"><span>Cylex.ch</span><span class="tag">cylex</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">BE</span><span class="country">BELGIUM</span></div><div class="links">
+<a class="link" href="https://www.1307.be"><span>GoldenPages.be</span><span class="tag">dir</span></a>
+<a class="link" href="https://fr.cylex-belgie.be"><span>Cylex Belgium</span><span class="tag">cylex</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">NL</span><span class="country">HOLLAND</span></div><div class="links">
+<a class="link" href="https://www.goudengids.nl"><span>Goudengids.nl</span><span class="tag">dir</span></a>
+<a class="link" href="https://www.cylex.nl"><span>Cylex.nl</span><span class="tag">cylex</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">AU</span><span class="country">AUSTRALIA</span></div><div class="links">
+<a class="link" href="https://www.yellowpages.com.au"><span>YellowPages.com.au</span><span class="tag">dir</span></a>
+<a class="link" href="https://www.cylex-australia.com"><span>Cylex Australia</span><span class="tag">cylex</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">NZ</span><span class="country">NEW ZEALAND</span></div><div class="links">
+<a class="link" href="https://yellow.co.nz"><span>Yellow (NZ)</span><span class="tag">dir</span></a>
+<a class="link" href="https://www.cylex.co.nz"><span>Cylex.co.nz</span><span class="tag">cylex</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">CZ</span><span class="country">CZECH &amp; SLOVAKIA</span></div><div class="links">
+<a class="link" href="https://www.zlatestranky.cz"><span>Zlatestranky.cz</span><span class="tag">dir</span></a>
+<a class="link" href="https://www.zlatestranky.sk"><span>Zlatestranky.sk</span><span class="tag">dir</span></a>
+<a class="link" href="https://www.cylex.cz"><span>Cylex Czech</span><span class="tag">cylex</span></a>
+<a class="link" href="https://www.yelp.cz"><span>Yelp.cz</span><span class="tag">yelp</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">NO</span><span class="country">NORWAY</span></div><div class="links">
+<a class="link" href="https://www.gulesider.no"><span>Gulesider.no</span><span class="tag">dir</span></a>
+<a class="link" href="https://www.cylex.no"><span>Cylex Norway</span><span class="tag">cylex</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">DK</span><span class="country">DENMARK</span></div><div class="links">
+<a class="link" href="https://www.cylex.dk"><span>Cylex Denmark</span><span class="tag">cylex</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">SE</span><span class="country">SWEDEN</span></div><div class="links">
+<a class="link" href="https://www.cylex.se"><span>Cylex Sweden</span><span class="tag">cylex</span></a>
+<a class="link" href="https://www.yelp.se"><span>Yelp Sweden</span><span class="tag">yelp</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">PL</span><span class="country">POLAND</span></div><div class="links">
+<a class="link" href="https://www.yellowpages.pl"><span>YellowPages.pl</span><span class="tag">dir</span></a>
+<a class="link" href="https://www.cylex-polska.pl"><span>Cylex Polska</span><span class="tag">cylex</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">PT</span><span class="country">PORTUGAL</span></div><div class="links">
+<a class="link" href="https://www.pai.pt"><span>Pai.pt</span><span class="tag">dir</span></a>
+<a class="link" href="https://www.yelp.pt"><span>Yelp Portugal</span><span class="tag">yelp</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">IE</span><span class="country">IRELAND</span></div><div class="links">
+<a class="link" href="https://www.goldenpages.ie"><span>GoldenPages.ie</span><span class="tag">dir</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">GR</span><span class="country">GREECE</span></div><div class="links">
+<a class="link" href="https://www.xo.gr"><span>Xo.gr</span><span class="tag">dir</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">RO</span><span class="country">ROMANIA</span></div><div class="links">
+<a class="link" href="https://www.paginiaurii.ro"><span>Paginiaurii.ro</span><span class="tag">dir</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">AL</span><span class="country">ALBANIA</span></div><div class="links">
+<a class="link" href="https://www.yellowpagesalbania.com"><span>YellowPages Albania</span><span class="tag">dir</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">PK</span><span class="country">PAKISTAN</span></div><div class="links">
+<a class="link" href="https://www.lookup.pk"><span>Lookup.pk</span><span class="tag">dir</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">IN</span><span class="country">INDIA</span></div><div class="links">
+<a class="link" href="http://yellowpages.in"><span>YellowPages.in</span><span class="tag">dir</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">EG</span><span class="country">EGYPT</span></div><div class="links">
+<a class="link" href="https://www.yellowpages.com.eg"><span>Egypt Yellow Pages</span><span class="tag">dir</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">ZA</span><span class="country">SOUTH AFRICA</span></div><div class="links">
+<a class="link" href="https://yep.co.za"><span>Yep.co.za</span><span class="tag">dir</span></a>
+<a class="link" href="https://www.cylex.net.za"><span>Cylex South Africa</span><span class="tag">cylex</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">AE</span><span class="country">UAE</span></div><div class="links">
+<a class="link" href="https://www.yellowpages-uae.com"><span>YellowPages.UAE</span><span class="tag">dir</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">PH</span><span class="country">PHILIPPINES</span></div><div class="links">
+<a class="link" href="https://www.yellow-pages.ph"><span>Yellow-Pages.ph</span><span class="tag">dir</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">BR</span><span class="country">BRAZIL</span></div><div class="links">
+<a class="link" href="https://www.guiamais.com.br"><span>GuiaMais.com.br</span><span class="tag">dir</span></a>
+<a class="link" href="https://www.cylex.com.br"><span>Cylex Brazil</span><span class="tag">cylex</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">CL</span><span class="country">CHILE</span></div><div class="links">
+<a class="link" href="https://www.amarillas.cl"><span>Amarillas.cl</span><span class="tag">dir</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">MX</span><span class="country">MEXICO</span></div><div class="links">
+<a class="link" href="https://www.paginasamarillas.com"><span>PaginasAmarillas.com</span><span class="tag">dir</span></a>
+<a class="link" href="https://www.yelp.com.mx"><span>Yelp Mexico</span><span class="tag">yelp</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">TR</span><span class="country">TURKEY</span></div><div class="links">
+<a class="link" href="https://www.yelp.com.tr"><span>Yelp Turkey</span><span class="tag">yelp</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">JP</span><span class="country">JAPAN</span></div><div class="links">
+<a class="link" href="https://www.yelp.co.jp"><span>Yelp Japan</span><span class="tag">yelp</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">HU</span><span class="country">HUNGARY</span></div><div class="links">
+<a class="link" href="https://www.cylex.hu"><span>Cylex Hungary</span><span class="tag">cylex</span></a>
+</div></div>
+<div class="card"><div class="card-head"><span class="flag">FI</span><span class="country">FINLAND</span></div><div class="links">
+<a class="link" href="https://www.yelp.fi"><span>Yelp Finland</span><span class="tag">yelp</span></a>
+</div></div>
+</div>
+<div class="footer">MASA Yellow Leads Extractor - All Rights Reserved</div>
+</body>
+</html>
